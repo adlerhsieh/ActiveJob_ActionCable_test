@@ -1,24 +1,12 @@
-# README
+# Example
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a test of using ActiveJob & ActionCable together.
 
-Things you may want to cover:
+- Rails 5.0.0.1
+- Resque
 
-* Ruby version
+Start Resque worker:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+INTERVAL=0.1 PIDFILE=./resque.pid BACKGROUND=yes QUEUE='*' rake environment resque:work
+```
