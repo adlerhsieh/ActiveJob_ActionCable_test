@@ -1,0 +1,2 @@
+class Odd < ApplicationRecord
+end
